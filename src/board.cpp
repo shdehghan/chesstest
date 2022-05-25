@@ -84,7 +84,7 @@ void Board::cell_occupied_clicked(int row, int column)
     this->end = this->curr_user->check_win(this->cells);
     if (this->end)
         return;
-    this->curr_user = this->curr_user->id == W ? this->user_o : this->user_w;
+    this->curr_user = this->curr_user->id == W ? this->user_b : this->user_w;
 }
 
 void Board::put_wb_in_cell(int row, int column)

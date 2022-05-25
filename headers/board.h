@@ -23,7 +23,7 @@ class Board
         void draw();
         void run();
         void mouse_clicked(const sf::Vector2i& position);
-        void cell_empty_clicked(int row, int column);
+        void cell_occupied_clicked(int row, int column);
         void put_wb_in_cell(int row, int column);
         void check_end();
         void update_status_text();
