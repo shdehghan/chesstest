@@ -7,7 +7,7 @@
 using namespace std;
 class Pieces
 {
-    Pieces(char wob);
+    Pieces(Id wob);
     Id wob1;
     void move(int row,int column,int row_prime,int column_prime);
 };

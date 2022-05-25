@@ -1,4 +1,5 @@
 #include "plate.h"
+using namespace std;
 
 void Plate::vectorSaz(vector<vector<string>> plate)
 {

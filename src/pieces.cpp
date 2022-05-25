@@ -1,7 +1,7 @@
 #include "pieces.h"
 #include <string>
-
-Pieces::Pieces(char wob) : wob1(wob){}
+using namespace std;
+Pieces::Pieces(Id wob) : wob1(wob){}
 
 void Pieces::move(int row,int column,int row_prime,int column_prime)
 {
