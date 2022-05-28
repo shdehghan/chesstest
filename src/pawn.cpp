@@ -26,27 +26,33 @@ void Pawn::valid(bool start)
     {
         if (wob_pawn==B)
         {
-            if (plate_asli.plate[row+1][column+1]!="--")
+            if (plate_asli.plate[row+1][column+1][1]=='W')
             {
                 valid_plate1.valid_plate[row+1][column+1]==true;
             }
-            if (plate_asli.plate[row+1][column-1]!="--")
+            if (plate_asli.plate[row+1][column-1][1]=='W')
             {
                 valid_plate1.valid_plate[row+1][column-1]==true;
             }
-            valid_plate1.valid_plate[row+1][column]==true;
+            if (plate_asli.plate[row+1][column]!="--")
+            {
+                valid_plate1.valid_plate[row+1][column]==true;
+            }
         }
         else
         {
-            if (plate_asli.plate[row-1][column+1]!="--")
+            if (plate_asli.plate[row-1][column+1][1]=='B')
             {
                 valid_plate1.valid_plate[row-1][column+1]==true;
             }
-            if (plate_asli.plate[row-1][column-1]!="--")
+            if (plate_asli.plate[row-1][column-1][1]=='B')
             {
                 valid_plate1.valid_plate[row-1][column-1]==true;
             }
-            valid_plate1.valid_plate[row-1][column]==true;
+            if (plate_asli.plate[row-1][column]!="--")
+            {
+                valid_plate1.valid_plate[row-1][column]==true;
+            }
         }
     }
 }
