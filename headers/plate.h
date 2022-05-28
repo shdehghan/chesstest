@@ -6,7 +6,10 @@
 #include <string>
 class Plate
 {
-    vector<vector<string>> plate;
-    void vectorSaz(vector<vector<string>> plate);
+    public:
+        vector<vector<string>> plate;
+        vector<vector<bool>> valid_plate;
+        void vectorSaz(vector<vector<string>> plate);
+        void validPlateSaz(vector<vector<bool>> valid_plate);
 };
 #endif

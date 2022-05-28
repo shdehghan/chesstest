@@ -7,10 +7,13 @@ void Pieces::move(int row,int column,int row_prime,int column_prime)
 {
     string piece1,piece2;
     vector<vector<string>> plate1;
+    vector<vector<bool>> valid_plate;
     plate1.resize(8);
+    valid_plate.resize(8);
     for (int row=0;row<8;row++)
     {
         plate1[row].resize(8);
+        valid_plate[row].resize(8);
     }
     Plate Plate2;
     Plate2.vectorSaz(Plate2.plate);
