@@ -10,6 +10,6 @@ class Rook
     int row;
     int  column;
     void move();
-    void valid();
+    void valid(int row,int column,Id wob_rook);
 };
 #endif

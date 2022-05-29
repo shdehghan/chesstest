@@ -2,7 +2,7 @@
 
 
 Rook::Rook(int i,int j,Id wob_rook):row(i),column(j),wob_rook(wob_rook){}
-void valid()
+void valid(int row,int column,Id wob_rook)
 {
     Plate valid_plate1;
     Plate plate_asli;
