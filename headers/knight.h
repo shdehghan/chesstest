@@ -10,6 +10,6 @@ public:
     int column;
     Id wob_knight;
     void move();
-    void valid(int row,int column,Id wob_knight);
+    void valid();
 };
 #endif
