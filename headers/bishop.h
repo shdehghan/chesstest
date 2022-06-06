@@ -4,11 +4,12 @@
 
 class Bishop
 {
-    Bishop(int i,int j,Id wob_bishop);
-    int row;
-    int column;
-    Id wob_bishop;
-    void move();
-    vector<vector<bool>> valid();
+    public:
+        Bishop(int i,int j,Id wob_bishop);
+        int row;
+        int column;
+        Id wob_bishop;
+        void move();
+        vector<vector<bool>> valid();
 };
 #endif
