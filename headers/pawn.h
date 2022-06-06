@@ -13,7 +13,7 @@ class Pawn
         Id wob_pawn;
         Pieces pawn1(Id wob_pawn);
         void move();
-        vector<vector<bool>> valid(bool start);
+        vector<vector<bool>> valid();
 
 };
 #endif

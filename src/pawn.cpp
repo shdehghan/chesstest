@@ -3,7 +3,7 @@
 
 
 Pawn::Pawn(int i,int j,bool tof,Id Wob_pawn):row(i),column(j),start(tof),wob_pawn(wob_pawn){}
-vector<vector<bool>> Pawn::valid(bool start)
+vector<vector<bool>> Pawn::valid()
 {
     Plate valid_plate1;
     Plate plate_asli;

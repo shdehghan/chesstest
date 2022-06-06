@@ -69,7 +69,7 @@ bool User::check_win(Cells &cells)
                                     {
                                         if (plate_asli.plate[k][h][1]=='B')
                                         {
-                                            Bishop bishop_b(h,k,B);
+                                            Bishop bishop_b(k,h,B);
                                             validPlate=bishop_b.valid();
                                             for (int m=0;m<8;m++)
                                             {
@@ -86,7 +86,7 @@ bool User::check_win(Cells &cells)
                                         {
                                             if (plate_asli.plate[k][h][1]=='R')
                                             {
-                                                Rook rook_b(h,k,B);
+                                                Rook rook_b(k,h,B);
                                                 validPlate=rook_b.valid();
                                                 for (int m=0;m<8;m++)
                                                 {
@@ -99,12 +99,59 @@ bool User::check_win(Cells &cells)
                                                     }
                                                 }
                                             }
+                                            else
+                                            {
+                                                if (plate_asli.plate[k][h][1]=='N')
+                                                {
+                                                    Knight knight_b(k,h,B);
+                                                    validPlate=knight_b.valid();
+                                                    for (int m=0;m<8;m++)
+                                                    {
+                                                        for (int l=0;l<8;l++)
+                                                        {
+                                                            if (validKing[m][l]==true && validPlate[m][l]==true)
+                                                            {
+                                                                validKing[m][l]=false;
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                                else
+                                                {
+                                                    if (plate_asli.plate[k][h][1]=='P')
+                                                    {
+                                                        Pawn pawn_b(k,h,true,B);
+                                                        validPlate=pawn_b.valid();
+                                                        for (int m=0;m<8;m++)
+                                                        {
+                                                            for (int l=0;l<8;l++)
+                                                            {
+                                                                if (validKing[m][l]==true && validPlate[m][l]==true)
+                                                                {
+                                                                    validKing[m][l]=false;
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
                                         }
                                     }
                                 }
                             }
                         }
                     }
+                    for (int k=0;k<8;k++)
+                    {
+                        for (int h=0;h<8;h++)
+                        {
+                            if (validKing[k][h]==true)
+                            {
+                                return false;
+                            }
+                        }
+                    }
+                    return true;
                 }
                 else
                 {
@@ -152,7 +199,7 @@ bool User::check_win(Cells &cells)
                                     {
                                         if (plate_asli.plate[k][h][1]=='B')
                                         {
-                                            Bishop bishop_w(h,k,W);
+                                            Bishop bishop_w(k,h,W);
                                             validPlate=bishop_w.valid();
                                             for (int m=0;m<8;m++)
                                             {
@@ -169,7 +216,7 @@ bool User::check_win(Cells &cells)
                                         {
                                             if (plate_asli.plate[k][h][1]=='R')
                                             {
-                                                Rook rook_w(h,k,W);
+                                                Rook rook_w(k,h,W);
                                                 validPlate=rook_w.valid();
                                                 for (int m=0;m<8;m++)
                                                 {
@@ -182,12 +229,59 @@ bool User::check_win(Cells &cells)
                                                     }
                                                 }
                                             }
+                                            else
+                                            {
+                                                if (plate_asli.plate[k][h][1]=='N')
+                                                {
+                                                    Knight knight_w(k,h,W);
+                                                    validPlate=knight_w.valid();
+                                                    for (int m=0;m<8;m++)
+                                                    {
+                                                        for (int l=0;l<8;l++)
+                                                        {
+                                                            if (validKing[m][l]==true && validPlate[m][l]==true)
+                                                            {
+                                                                validKing[m][l]=false;
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                                else
+                                                {
+                                                    if (plate_asli.plate[k][h][1]=='P')
+                                                    {
+                                                        Pawn pawn_w(k,h,true,W);
+                                                        validPlate=pawn_w.valid();
+                                                        for (int m=0;m<8;m++)
+                                                        {
+                                                            for (int l=0;l<8;l++)
+                                                            {
+                                                                if (validKing[m][l]==true && validPlate[m][l]==true)
+                                                                {
+                                                                    validKing[m][l]=false;
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
                                         }
                                     }
                                 }
                             }
                         }
                     }
+                    for (int k=0;k<8;k++)
+                    {
+                        for (int h=0;h<8;h++)
+                        {
+                            if (validKing[k][h]==true)
+                            {
+                                return false;
+                            }
+                        }
+                    }
+                    return true;
                 }
             }
         }
