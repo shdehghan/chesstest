@@ -26,11 +26,11 @@ vector<vector<bool>> Pawn::valid(bool start)
     {
         if (wob_pawn==B)
         {
-            if (plate_asli.plate[row+1][column+1][1]=='W')
+            if (plate_asli.plate[row+1][column+1][2]=='W')
             {
                 valid_plate1.valid_plate[row+1][column+1]==true;
             }
-            if (plate_asli.plate[row+1][column-1][1]=='W')
+            if (plate_asli.plate[row+1][column-1][2]=='W')
             {
                 valid_plate1.valid_plate[row+1][column-1]==true;
             }
@@ -41,11 +41,11 @@ vector<vector<bool>> Pawn::valid(bool start)
         }
         else
         {
-            if (plate_asli.plate[row-1][column+1][1]=='B')
+            if (plate_asli.plate[row-1][column+1][2]=='B')
             {
                 valid_plate1.valid_plate[row-1][column+1]==true;
             }
-            if (plate_asli.plate[row-1][column-1][1]=='B')
+            if (plate_asli.plate[row-1][column-1][2]=='B')
             {
                 valid_plate1.valid_plate[row-1][column-1]==true;
             }

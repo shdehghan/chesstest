@@ -20,7 +20,7 @@ vector<vector<bool>> Rook::valid()
                 }
                 else
                 {
-                    if (plate_asli.plate[row+i][column][1]=='W')
+                    if (plate_asli.plate[row+i][column][2]=='W')
                     {
                         valid_plate1.valid_plate[row+i][column]==true;
                         break;
@@ -42,7 +42,7 @@ vector<vector<bool>> Rook::valid()
                 }
                 else
                 {
-                    if (plate_asli.plate[row-i][column][1]=='W')
+                    if (plate_asli.plate[row-i][column][2]=='W')
                     {
                         valid_plate1.valid_plate[row-i][column]==true;
                         break;
@@ -64,7 +64,7 @@ vector<vector<bool>> Rook::valid()
                 }
                 else
                 {
-                    if (plate_asli.plate[row][column+i][1]=='W')
+                    if (plate_asli.plate[row][column+i][2]=='W')
                     {
                         valid_plate1.valid_plate[row][column+i]==true;
                         break;
@@ -86,7 +86,7 @@ vector<vector<bool>> Rook::valid()
                 }
                 else
                 {
-                    if (plate_asli.plate[row][column-i][1]=='W')
+                    if (plate_asli.plate[row][column-i][2]=='W')
                     {
                         valid_plate1.valid_plate[row][column-i]==true;
                         break;
@@ -111,7 +111,7 @@ vector<vector<bool>> Rook::valid()
                 }
                 else
                 {
-                    if (plate_asli.plate[row+i][column][1]=='B')
+                    if (plate_asli.plate[row+i][column][2]=='B')
                     {
                         valid_plate1.valid_plate[row+i][column]==true;
                         break;
@@ -133,7 +133,7 @@ vector<vector<bool>> Rook::valid()
                 }
                 else
                 {
-                    if (plate_asli.plate[row-i][column][1]=='B')
+                    if (plate_asli.plate[row-i][column][2]=='B')
                     {
                         valid_plate1.valid_plate[row-i][column]==true;
                         break;
@@ -155,7 +155,7 @@ vector<vector<bool>> Rook::valid()
                 }
                 else
                 {
-                    if (plate_asli.plate[row][column+i][1]=='B')
+                    if (plate_asli.plate[row][column+i][2]=='B')
                     {
                         valid_plate1.valid_plate[row][column+i]==true;
                         break;
@@ -177,7 +177,7 @@ vector<vector<bool>> Rook::valid()
                 }
                 else
                 {
-                    if (plate_asli.plate[row][column-i][1]=='B')
+                    if (plate_asli.plate[row][column-i][2]=='B')
                     {
                         valid_plate1.valid_plate[row][column-i]==true;
                         break;

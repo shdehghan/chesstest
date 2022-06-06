@@ -19,14 +19,14 @@ vector<vector<bool>> King::valid()
         {
             if (wob_king==B)
             {
-                if (plate_asli.plate[row+1][column][1]=='w')
+                if (plate_asli.plate[row+1][column][2]=='w')
                 {
                     valid_plate1.valid_plate[row+1][column]=true;
                 }
             }
             else
             {
-                if (plate_asli.plate[row+1][column][1]=='B')
+                if (plate_asli.plate[row+1][column][2]=='B')
                 {
                     valid_plate1.valid_plate[row+1][column]=true;
                 }
@@ -43,14 +43,14 @@ vector<vector<bool>> King::valid()
         {
             if (wob_king==B)
             {
-                if (plate_asli.plate[row-1][column][1]=='w')
+                if (plate_asli.plate[row-1][column][2]=='w')
                 {
                     valid_plate1.valid_plate[row-1][column]=true;
                 }
             }
             else
             {
-                if (plate_asli.plate[row-1][column][1]=='B')
+                if (plate_asli.plate[row-1][column][2]=='B')
                 {
                     valid_plate1.valid_plate[row-1][column]=true;
                 }
@@ -67,14 +67,14 @@ vector<vector<bool>> King::valid()
         {
             if (wob_king==B)
             {
-                if (plate_asli.plate[row][column+1][1]=='w')
+                if (plate_asli.plate[row][column+1][2]=='w')
                 {
                     valid_plate1.valid_plate[row][column+1]=true;
                 }
             }
             else
             {
-                if (plate_asli.plate[row][column+1][1]=='B')
+                if (plate_asli.plate[row][column+1][2]=='B')
                 {
                     valid_plate1.valid_plate[row][column+1]=true;
                 }
@@ -91,14 +91,14 @@ vector<vector<bool>> King::valid()
         {
             if (wob_king==B)
             {
-                if (plate_asli.plate[row][column-1][1]=='w')
+                if (plate_asli.plate[row][column-1][2]=='w')
                 {
                     valid_plate1.valid_plate[row][column-1]=true;
                 }
             }
             else
             {
-                if (plate_asli.plate[row][column-1][1]=='B')
+                if (plate_asli.plate[row][column-1][2]=='B')
                 {
                     valid_plate1.valid_plate[row][column-1]=true;
                 }
@@ -115,14 +115,14 @@ vector<vector<bool>> King::valid()
         {
             if (wob_king==B)
             {
-                if (plate_asli.plate[row+1][column+1][1]=='w')
+                if (plate_asli.plate[row+1][column+1][2]=='w')
                 {
                     valid_plate1.valid_plate[row+1][column+1]=true;
                 }
             }
             else
             {
-                if (plate_asli.plate[row+1][column+1][1]=='B')
+                if (plate_asli.plate[row+1][column+1][2]=='B')
                 {
                     valid_plate1.valid_plate[row+1][column+1]=true;
                 }
@@ -139,14 +139,14 @@ vector<vector<bool>> King::valid()
         {
             if (wob_king==B)
             {
-                if (plate_asli.plate[row-1][column+1][1]=='w')
+                if (plate_asli.plate[row-1][column+1][2]=='w')
                 {
                     valid_plate1.valid_plate[row-1][column+1]=true;
                 }
             }
             else
             {
-                if (plate_asli.plate[row-1][column+1][1]=='B')
+                if (plate_asli.plate[row-1][column+1][2]=='B')
                 {
                     valid_plate1.valid_plate[row-1][column+1]=true;
                 }
@@ -163,14 +163,14 @@ vector<vector<bool>> King::valid()
         {
             if (wob_king==B)
             {
-                if (plate_asli.plate[row+1][column-1][1]=='w')
+                if (plate_asli.plate[row+1][column-1][2]=='w')
                 {
                     valid_plate1.valid_plate[row+1][column-1]=true;
                 }
             }
             else
             {
-                if (plate_asli.plate[row+1][column-1][1]=='B')
+                if (plate_asli.plate[row+1][column-1][2]=='B')
                 {
                     valid_plate1.valid_plate[row+1][column-1]=true;
                 }
@@ -187,14 +187,14 @@ vector<vector<bool>> King::valid()
         {
             if (wob_king==B)
             {
-                if (plate_asli.plate[row-1][column-1][1]=='w')
+                if (plate_asli.plate[row-1][column-1][2]=='w')
                 {
                     valid_plate1.valid_plate[row-1][column-1]=true;
                 }
             }
             else
             {
-                if (plate_asli.plate[row-1][column-1][1]=='B')
+                if (plate_asli.plate[row-1][column-1][2]=='B')
                 {
                     valid_plate1.valid_plate[row-1][column-1]=true;
                 }

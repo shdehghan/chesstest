@@ -19,7 +19,7 @@ vector<vector<bool>> Knight::valid()
             }
             else
             {
-                if (plate_asli.plate[row+1][column+3][1]=='W')
+                if (plate_asli.plate[row+1][column+3][2]=='W')
                 {
                     valid_plate1.valid_plate[row+1][column+3]=true;
                 }
@@ -33,7 +33,7 @@ vector<vector<bool>> Knight::valid()
             }
             else
             {
-                if (plate_asli.plate[row-1][column+3][1]=='W')
+                if (plate_asli.plate[row-1][column+3][2]=='W')
                 {
                     valid_plate1.valid_plate[row-1][column+3]=true;
                 }
@@ -48,7 +48,7 @@ vector<vector<bool>> Knight::valid()
             }
             else
             {
-                if (plate_asli.plate[row+1][column-3][1]=='W')
+                if (plate_asli.plate[row+1][column-3][2]=='W')
                 {
                     valid_plate1.valid_plate[row+1][column-3]=true;
                 }
@@ -62,7 +62,7 @@ vector<vector<bool>> Knight::valid()
             }
             else
             {
-                if (plate_asli.plate[row-1][column-3][1]=='W')
+                if (plate_asli.plate[row-1][column-3][2]=='W')
                 {
                     valid_plate1.valid_plate[row-1][column-3]=true;
                 }
@@ -90,7 +90,7 @@ vector<vector<bool>> Knight::valid()
             }
             else
             {
-                if (plate_asli.plate[row-3][column+1][1]=='W')
+                if (plate_asli.plate[row-3][column+1][2]=='W')
                 {
                     valid_plate1.valid_plate[row-3][column+1]=true;
                 }
@@ -104,7 +104,7 @@ vector<vector<bool>> Knight::valid()
             }
             else
             {
-                if (plate_asli.plate[row+3][column-1][1]=='W')
+                if (plate_asli.plate[row+3][column-1][2]=='W')
                 {
                     valid_plate1.valid_plate[row+3][column-1]=true;
                 }
@@ -118,7 +118,7 @@ vector<vector<bool>> Knight::valid()
             }
             else
             {
-                if (plate_asli.plate[row-3][column-1][1]=='W')
+                if (plate_asli.plate[row-3][column-1][2]=='W')
                 {
                     valid_plate1.valid_plate[row-3][column-1]=true;
                 }
@@ -135,7 +135,7 @@ vector<vector<bool>> Knight::valid()
             }
             else
             {
-                if (plate_asli.plate[row+1][column+3][1]=='B')
+                if (plate_asli.plate[row+1][column+3][2]=='B')
                 {
                     valid_plate1.valid_plate[row+1][column+3]=true;
                 }
@@ -149,7 +149,7 @@ vector<vector<bool>> Knight::valid()
             }
             else
             {
-                if (plate_asli.plate[row-1][column+3][1]=='B')
+                if (plate_asli.plate[row-1][column+3][2]=='B')
                 {
                     valid_plate1.valid_plate[row-1][column+3]=true;
                 }
@@ -164,7 +164,7 @@ vector<vector<bool>> Knight::valid()
             }
             else
             {
-                if (plate_asli.plate[row+1][column-3][1]=='B')
+                if (plate_asli.plate[row+1][column-3][2]=='B')
                 {
                     valid_plate1.valid_plate[row+1][column-3]=true;
                 }
@@ -178,7 +178,7 @@ vector<vector<bool>> Knight::valid()
             }
             else
             {
-                if (plate_asli.plate[row-1][column-3][1]=='B')
+                if (plate_asli.plate[row-1][column-3][2]=='B')
                 {
                     valid_plate1.valid_plate[row-1][column-3]=true;
                 }
@@ -192,7 +192,7 @@ vector<vector<bool>> Knight::valid()
             }
             else
             {
-                if (plate_asli.plate[row+3][column+1][1]=='B')
+                if (plate_asli.plate[row+3][column+1][2]=='B')
                 {
                     valid_plate1.valid_plate[row+3][column+1]=true;
                 }
@@ -206,7 +206,7 @@ vector<vector<bool>> Knight::valid()
             }
             else
             {
-                if (plate_asli.plate[row-3][column+1][1]=='B')
+                if (plate_asli.plate[row-3][column+1][2]=='B')
                 {
                     valid_plate1.valid_plate[row-3][column+1]=true;
                 }
@@ -220,7 +220,7 @@ vector<vector<bool>> Knight::valid()
             }
             else
             {
-                if (plate_asli.plate[row+3][column-1][1]=='B')
+                if (plate_asli.plate[row+3][column-1][2]=='B')
                 {
                     valid_plate1.valid_plate[row+3][column-1]=true;
                 }
@@ -234,7 +234,7 @@ vector<vector<bool>> Knight::valid()
             }
             else
             {
-                if (plate_asli.plate[row-3][column-1][1]=='B')
+                if (plate_asli.plate[row-3][column-1][2]=='B')
                 {
                     valid_plate1.valid_plate[row-3][column-1]=true;
                 }
