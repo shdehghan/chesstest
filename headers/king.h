@@ -10,6 +10,6 @@ public:
     int column;
     Id wob_king;
     void move();
-    void valid(int row,int column,Id wob_king);
+    vector<vector<bool>> valid();
 };
 #endif

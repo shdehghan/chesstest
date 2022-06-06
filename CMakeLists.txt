@@ -19,6 +19,7 @@ set(SOURCES
     ${SRC_DIRECTORY}/plate.cpp
     ${SRC_DIRECTORY}/queen.cpp
     ${SRC_DIRECTORY}/rook.cpp
+    ${SRC_DIRECTORY}/bishop.cpp
 )
 
 include_directories(${INCLUDE_DIRECTORY})

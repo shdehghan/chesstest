@@ -11,6 +11,6 @@ public:
     int column;
     Id wob_queen;
     void move();
-    void valid();
+    vector<vector<bool>> valid();
 };
 #endif

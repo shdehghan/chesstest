@@ -2,7 +2,7 @@
 
 
 Rook::Rook(int i,int j,Id wob_rook):row(i),column(j),wob_rook(wob_rook){}
-void valid(int row,int column,Id wob_rook)
+vector<vector<bool>> Rook::valid()
 {
     Plate valid_plate1;
     Plate plate_asli;
@@ -190,4 +190,5 @@ void valid(int row,int column,Id wob_rook)
             }
         }
     }
+    return valid_plate1.valid_plate;
 }

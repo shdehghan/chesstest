@@ -3,7 +3,7 @@
 
 
 Knight::Knight(int i,int j,Id wob_knight):row(i),column(j),wob_knight(wob_knight){}
-void  Knight::valid()
+vector<vector<bool>> Knight::valid()
 {
     Plate valid_plate1;
     Plate plate_asli;
@@ -241,4 +241,5 @@ void  Knight::valid()
             }
         }
     }
+    return valid_plate1.valid_plate;
 }

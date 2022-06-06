@@ -2,7 +2,7 @@
 #include "plate.h"
 
 Queen::Queen(int i,int j,Id wob_queen):row(i),column(j),wob_queen(wob_queen){}
-void Queen::valid()
+vector<vector<bool>> Queen::valid()
 {
     Plate valid_plate1;
     Plate plate_asli;
@@ -304,4 +304,5 @@ void Queen::valid()
             }
         }
     }
+    return valid_plate1.valid_plate;
 }

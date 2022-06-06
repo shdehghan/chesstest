@@ -5,14 +5,15 @@
 
 class Pawn
 {
-    Pawn(int i,int j,bool tof, Id wob_pawn);
-    int row;
-    int column;
-    bool start;
-    Id wob_pawn;
-    Pieces pawn1(Id wob_pawn);
-    void move();
-    void valid(bool start);
+    public:
+        Pawn(int i,int j,bool tof, Id wob_pawn);
+        int row;
+        int column;
+        bool start;
+        Id wob_pawn;
+        Pieces pawn1(Id wob_pawn);
+        void move();
+        vector<vector<bool>> valid(bool start);
 
 };
 #endif

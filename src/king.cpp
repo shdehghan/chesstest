@@ -3,7 +3,7 @@
 
 
 King::King(int i,int j,Id wob_king):row(i),column(j),wob_king(wob_king){}
-void valid(int row,int column,Id wob_king)
+vector<vector<bool>> King::valid()
 {
     Plate valid_plate1;
     Plate plate_asli;
@@ -201,4 +201,5 @@ void valid(int row,int column,Id wob_king)
             }
         }
     }
+    return valid_plate1.valid_plate;
 }
